@@ -13,6 +13,9 @@
 		3A1FE65D1BC7327D00A9B277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1FE65B1BC7327D00A9B277 /* Main.storyboard */; };
 		3A1FE65F1BC7327D00A9B277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1FE65E1BC7327D00A9B277 /* Assets.xcassets */; };
 		3A1FE6621BC7327D00A9B277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1FE6601BC7327D00A9B277 /* LaunchScreen.storyboard */; };
+		3AA418871BC7373600D21BF1 /* DribbbleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA418861BC7373600D21BF1 /* DribbbleAPI.m */; settings = {ASSET_TAGS = (); }; };
+		3AA4188B1BC73A5100D21BF1 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4188A1BC73A5100D21BF1 /* Image.m */; settings = {ASSET_TAGS = (); }; };
+		3AA4188D1BC73F0F00D21BF1 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4188C1BC73F0F00D21BF1 /* ImageCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		3A1FE65E1BC7327D00A9B277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A1FE6611BC7327D00A9B277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A1FE6631BC7327D00A9B277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA418861BC7373600D21BF1 /* DribbbleAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DribbbleAPI.m; sourceTree = "<group>"; };
+		3AA418881BC7375500D21BF1 /* DribbbleAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DribbbleAPI.h; sourceTree = "<group>"; };
+		3AA418891BC73A4700D21BF1 /* Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		3AA4188A1BC73A5100D21BF1 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		3AA4188C1BC73F0F00D21BF1 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		3AA4188E1BC73F1800D21BF1 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +73,6 @@
 				3A1FE6691BC735CE00A9B277 /* Cells */,
 				3A1FE6551BC7327D00A9B277 /* AppDelegate.h */,
 				3A1FE6561BC7327D00A9B277 /* AppDelegate.m */,
-				3A1FE6581BC7327D00A9B277 /* PhotosViewController.h */,
-				3A1FE6591BC7327D00A9B277 /* PhotosViewController.m */,
 				3A1FE65B1BC7327D00A9B277 /* Main.storyboard */,
 				3A1FE65E1BC7327D00A9B277 /* Assets.xcassets */,
 				3A1FE6601BC7327D00A9B277 /* LaunchScreen.storyboard */,
@@ -86,6 +93,8 @@
 		3A1FE6691BC735CE00A9B277 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3AA4188E1BC73F1800D21BF1 /* ImageCell.h */,
+				3AA4188C1BC73F0F00D21BF1 /* ImageCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -93,6 +102,8 @@
 		3A1FE66A1BC735D800A9B277 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A1FE6581BC7327D00A9B277 /* PhotosViewController.h */,
+				3A1FE6591BC7327D00A9B277 /* PhotosViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -107,6 +118,10 @@
 		3A1FE66C1BC7360700A9B277 /* DribbbleAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3AA418881BC7375500D21BF1 /* DribbbleAPI.h */,
+				3AA418861BC7373600D21BF1 /* DribbbleAPI.m */,
+				3AA418891BC73A4700D21BF1 /* Image.h */,
+				3AA4188A1BC73A5100D21BF1 /* Image.m */,
 			);
 			name = DribbbleAPI;
 			sourceTree = "<group>";
@@ -181,9 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA418871BC7373600D21BF1 /* DribbbleAPI.m in Sources */,
+				3AA4188D1BC73F0F00D21BF1 /* ImageCell.m in Sources */,
 				3A1FE65A1BC7327D00A9B277 /* PhotosViewController.m in Sources */,
 				3A1FE6571BC7327D00A9B277 /* AppDelegate.m in Sources */,
 				3A1FE6541BC7327D00A9B277 /* main.m in Sources */,
+				3AA4188B1BC73A5100D21BF1 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +348,7 @@
 				3A1FE6681BC7327D00A9B277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
